@@ -1,6 +1,6 @@
 {
   "name": "simple-dispatcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Attach multiple callbacks to a single event.",
   "main": "index.js",
   "scripts": {
