@@ -50,4 +50,23 @@ describe('dispatcher', function() {
     cb();
     cb2();
   });
+
+  it('should dispatch events', function(done) {
+    var emitter = new EventEmitter();
+    var count = 0;
+
+    function cb() {
+      count++;
+    };
+    function cb2() {
+      count.should.eql(1);
+      done();
+    };
+
+    dispatcher(emitter, {
+      foo: [cb, cb2]
+    });
+
+    emitter.emit('foo');
+  });
 });
