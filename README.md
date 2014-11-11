@@ -26,7 +26,7 @@ function fn1() {};
 function fn2() {};
 function fn3() {};
 
-// dispatch an event
+// dispatch event
 emitter.emit('myEvent', {foo: 'bar'});
 ```
 
