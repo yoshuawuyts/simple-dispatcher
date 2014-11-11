@@ -1,0 +1,25 @@
+{
+  "name": "simple-dispatcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": "yoshuawuyts/simple-dispatcher",
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "istanbul": "^0.3.2",
+    "make-lint": "^1.0.1",
+    "mocha": "^2.0.1",
+    "should": "^4.3.0"
+  },
+  "files": [
+    "lib",
+    "LICENSE",
+    "index.js",
+    "HISTORY.md"
+  ]
+}
