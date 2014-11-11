@@ -4,7 +4,7 @@
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Downloads][downloads-image]][downloads-url]
 
-Attach multiple callbacks to a single event.
+Attach multiple listeners to a single emitter.
 
 ## Installation
 ```bash
@@ -18,13 +18,16 @@ var EventEmitter = require('events').EventEmitter;
 var emitter = new EventEmitter();
 
 dispatcher(emitter, {
-  on: [fn1, fn2],
+  myEvent: [fn1, fn2],
   end: fn3
 });
 
 function fn1() {};
 function fn2() {};
 function fn3() {};
+
+// dispatch an event
+emitter.emit('myEvent', {foo: 'bar'});
 ```
 
 ## See also
