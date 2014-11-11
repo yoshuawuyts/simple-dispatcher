@@ -17,14 +17,11 @@ var dispatcher = require('simple-dispatcher');
 var EventEmitter = require('events').EventEmitter;
 var emitter = new EventEmitter();
 
+// register callbacks
 dispatcher(emitter, {
-  myEvent: [fn1, fn2],
-  end: fn3
+  myEvent: [myFn1, myFn2],
+  end: myFn3
 });
-
-function fn1() {};
-function fn2() {};
-function fn3() {};
 
 // dispatch event
 emitter.emit('myEvent', {foo: 'bar'});
